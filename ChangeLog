@@ -1,6 +1,14 @@
 CHANGES
 =======
 
+0.3.1
+-----
+
+* Handle ConfigParser.readfp deprecation
+* add python 3.6 unit test job
+* switch documentation job to new PTI
+* import zuul job settings from project-config
+
 0.3.0
 -----
 
