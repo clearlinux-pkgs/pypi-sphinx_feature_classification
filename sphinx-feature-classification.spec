@@ -4,7 +4,7 @@
 #
 Name     : sphinx-feature-classification
 Version  : 0.3.1
-Release  : 2
+Release  : 3
 URL      : https://files.pythonhosted.org/packages/d9/8f/62b2c783bb6647b08085c546c86280a663601d3b87ac1bb67c5ee8642d2e/sphinx-feature-classification-0.3.1.tar.gz
 Source0  : https://files.pythonhosted.org/packages/d9/8f/62b2c783bb6647b08085c546c86280a663601d3b87ac1bb67c5ee8642d2e/sphinx-feature-classification-0.3.1.tar.gz
 Summary  : Generate a matrix of pluggable drivers and their support to an API in Sphinx.
