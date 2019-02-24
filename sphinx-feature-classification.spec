@@ -4,7 +4,7 @@
 #
 Name     : sphinx-feature-classification
 Version  : 0.3.1
-Release  : 3
+Release  : 4
 URL      : https://files.pythonhosted.org/packages/d9/8f/62b2c783bb6647b08085c546c86280a663601d3b87ac1bb67c5ee8642d2e/sphinx-feature-classification-0.3.1.tar.gz
 Source0  : https://files.pythonhosted.org/packages/d9/8f/62b2c783bb6647b08085c546c86280a663601d3b87ac1bb67c5ee8642d2e/sphinx-feature-classification-0.3.1.tar.gz
 Summary  : Generate a matrix of pluggable drivers and their support to an API in Sphinx.
@@ -28,8 +28,11 @@ BuildRequires : tox
 BuildRequires : virtualenv
 
 %description
+========================
 Team and repository tags
-        ========================
+========================
+.. image:: https://governance.openstack.org/tc/badges/sphinx-feature-classification.svg
+:target: https://governance.openstack.org/tc/reference/tags/index.html
 
 %package license
 Summary: license components for the sphinx-feature-classification package.
@@ -65,7 +68,8 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1541606064
+export SOURCE_DATE_EPOCH=1551038586
+export MAKEFLAGS=%{?_smp_mflags}
 python3 setup.py build
 
 %check
