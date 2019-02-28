@@ -1,6 +1,15 @@
 CHANGES
 =======
 
+0.3.2
+-----
+
+* Change python3.5 job to python3.7 job on Stein+
+* Sort drivers listed under feature details
+* Update home-page
+* Change openstack-dev to openstack-discuss
+* Optimizing the safety of the http link site in HACKING.rst
+
 0.3.1
 -----
 
