@@ -1,6 +1,17 @@
 CHANGES
 =======
 
+0.4.0
+-----
+
+* OpenDev Migration Patch
+* Fix the summary table border not rendering
+* Copy the CSS into the built docs
+* Fix deprecated add\_stylesheet with add\_css\_file
+* Fix driver links rendering in the summary table
+* releasenotes: Remove crud from 'conf.py'
+* releasenotes: Switch to openstackdocstheme
+
 0.3.2
 -----
 
