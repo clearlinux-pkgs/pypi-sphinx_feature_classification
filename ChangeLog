@@ -1,6 +1,12 @@
 CHANGES
 =======
 
+0.4.1
+-----
+
+* Add Python 3 Train unit tests
+* Change the deps source
+
 0.4.0
 -----
 
