@@ -4,7 +4,7 @@
 #
 Name     : sphinx-feature-classification
 Version  : 0.4.2
-Release  : 10
+Release  : 11
 URL      : https://files.pythonhosted.org/packages/ee/9c/98a4dc19bea7d4c560b150531a817dcff6d58ed14324b7c6ad0924641843/sphinx-feature-classification-0.4.2.tar.gz
 Source0  : https://files.pythonhosted.org/packages/ee/9c/98a4dc19bea7d4c560b150531a817dcff6d58ed14324b7c6ad0924641843/sphinx-feature-classification-0.4.2.tar.gz
 Summary  : Generate a matrix of pluggable drivers and their support to an API in Sphinx.
@@ -17,25 +17,12 @@ Requires: docutils
 Requires: pbr
 BuildRequires : Sphinx
 BuildRequires : buildreq-distutils3
-BuildRequires : ddt
 BuildRequires : docutils
-BuildRequires : oslotest
 BuildRequires : pbr
-BuildRequires : pluggy
-BuildRequires : py-python
-BuildRequires : pytest
-BuildRequires : reno-python
-BuildRequires : testrepository
-BuildRequires : testrepository-python
-BuildRequires : tox
-BuildRequires : virtualenv
 
 %description
-========================
 Team and repository tags
-========================
-.. image:: https://governance.openstack.org/tc/badges/sphinx-feature-classification.svg
-:target: https://governance.openstack.org/tc/reference/tags/index.html
+        ========================
 
 %package license
 Summary: license components for the sphinx-feature-classification package.
@@ -72,8 +59,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1574720674
-# -Werror is for werrorists
+export SOURCE_DATE_EPOCH=1574204133
 export GCC_IGNORE_WERROR=1
 export CFLAGS="$CFLAGS -fno-lto "
 export FCFLAGS="$CFLAGS -fno-lto "
@@ -82,11 +68,6 @@ export CXXFLAGS="$CXXFLAGS -fno-lto "
 export MAKEFLAGS=%{?_smp_mflags}
 python3 setup.py build
 
-%check
-export http_proxy=http://127.0.0.1:9/
-export https_proxy=http://127.0.0.1:9/
-export no_proxy=localhost,127.0.0.1,0.0.0.0
-PYTHONPATH=%{buildroot}$(python -c "import sys; print(sys.path[-1])") python setup.py test
 %install
 export MAKEFLAGS=%{?_smp_mflags}
 rm -rf %{buildroot}
