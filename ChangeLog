@@ -1,6 +1,12 @@
 CHANGES
 =======
 
+0.4.2
+-----
+
+* make sure destination dir exist before copying files into it
+* Remove pypy from default env list
+
 0.4.1
 -----
 
