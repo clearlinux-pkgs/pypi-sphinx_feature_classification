@@ -1,6 +1,12 @@
 CHANGES
 =======
 
+1.0.0
+-----
+
+* Drop py2 support and testing
+* Add support for feature.api
+
 0.4.2
 -----
 
