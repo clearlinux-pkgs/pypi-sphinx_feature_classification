@@ -4,7 +4,7 @@
 #
 Name     : sphinx-feature-classification
 Version  : 1.0.0
-Release  : 15
+Release  : 16
 URL      : https://files.pythonhosted.org/packages/0d/17/2d94f3696177033132a2b83a309e9bd02a5fcab1519061d8d281050c98d0/sphinx-feature-classification-1.0.0.tar.gz
 Source0  : https://files.pythonhosted.org/packages/0d/17/2d94f3696177033132a2b83a309e9bd02a5fcab1519061d8d281050c98d0/sphinx-feature-classification-1.0.0.tar.gz
 Summary  : Generate a matrix of pluggable drivers and their support to an API in Sphinx.
@@ -20,29 +20,8 @@ BuildRequires : docutils
 BuildRequires : pbr
 
 %description
-========================
 Team and repository tags
-========================
-
-.. image:: https://governance.openstack.org/tc/badges/sphinx-feature-classification.svg
-    :target: https://governance.openstack.org/tc/reference/tags/index.html
-
-.. Change things from this point on
-
-=============================
-sphinx-feature-classification
-=============================
-
-This is a Sphinx directive that allows creating matrices of drivers a project
-contains and which features they support. The directive takes an INI file with
-specific syntax explained in the usage documentation to generate the matrices,
-in which projects have the authority to say what is supported within their own
-repository.
-
-* Free software: Apache license
-* Documentation: https://docs.openstack.org/sphinx-feature-classification/latest/
-* Source: http://opendev.org/openstack/sphinx-feature-classification
-* Bugs: https://storyboard.openstack.org/#!/project/921
+        ========================
 
 %package license
 Summary: license components for the sphinx-feature-classification package.
@@ -65,7 +44,9 @@ python components for the sphinx-feature-classification package.
 Summary: python3 components for the sphinx-feature-classification package.
 Group: Default
 Requires: python3-core
-Provides: pypi(sphinx-feature-classification)
+Provides: pypi(sphinx_feature_classification)
+Requires: pypi(docutils)
+Requires: pypi(pbr)
 
 %description python3
 python3 components for the sphinx-feature-classification package.
@@ -80,8 +61,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1582918249
-# -Werror is for werrorists
+export SOURCE_DATE_EPOCH=1583697757
 export GCC_IGNORE_WERROR=1
 export CFLAGS="$CFLAGS -fno-lto "
 export FCFLAGS="$CFLAGS -fno-lto "
