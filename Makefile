@@ -1,5 +1,5 @@
 PKG_NAME := sphinx-feature-classification
-URL = https://files.pythonhosted.org/packages/0d/17/2d94f3696177033132a2b83a309e9bd02a5fcab1519061d8d281050c98d0/sphinx-feature-classification-1.0.0.tar.gz
+URL = https://files.pythonhosted.org/packages/ad/7f/1aa3846c501a1cfc307b26a29720aa184ceee17788696f3181091b69b994/sphinx-feature-classification-1.0.1.tar.gz
 ARCHIVES = 
 
 include ../common/Makefile.common

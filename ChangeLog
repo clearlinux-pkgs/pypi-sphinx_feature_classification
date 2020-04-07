@@ -1,6 +1,12 @@
 CHANGES
 =======
 
+1.0.1
+-----
+
+* Update hacking for Python3
+* Switch to sphinx-build and cleanup
+
 1.0.0
 -----
 
