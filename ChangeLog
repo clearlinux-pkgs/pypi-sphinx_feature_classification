@@ -1,6 +1,15 @@
 CHANGES
 =======
 
+1.1.0
+-----
+
+* Cleanup misplaced release note
+* Reduce need for openstack specific requirements
+* Switch to victoria test template
+* Report sphinx extension is thread safe
+* Switch to newer openstackdocstheme and reno versions
+
 1.0.1
 -----
 
