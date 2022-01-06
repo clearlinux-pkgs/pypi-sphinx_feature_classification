@@ -4,7 +4,7 @@
 #
 Name     : sphinx-feature-classification
 Version  : 1.1.0
-Release  : 32
+Release  : 33
 URL      : https://files.pythonhosted.org/packages/46/7b/e0e558ca05a473a6942922e2665332ba0eeabe0e8a0c5e819e396f1650d0/sphinx-feature-classification-1.1.0.tar.gz
 Source0  : https://files.pythonhosted.org/packages/46/7b/e0e558ca05a473a6942922e2665332ba0eeabe0e8a0c5e819e396f1650d0/sphinx-feature-classification-1.1.0.tar.gz
 Summary  : Generate a matrix of pluggable drivers and their support to an API in Sphinx.
@@ -13,11 +13,9 @@ License  : Apache-2.0
 Requires: sphinx-feature-classification-license = %{version}-%{release}
 Requires: sphinx-feature-classification-python = %{version}-%{release}
 Requires: sphinx-feature-classification-python3 = %{version}-%{release}
-Requires: docutils
-Requires: pbr
 BuildRequires : buildreq-distutils3
-BuildRequires : docutils
-BuildRequires : pbr
+BuildRequires : pypi(docutils)
+BuildRequires : pypi(pbr)
 
 %description
 Team and repository tags
@@ -61,7 +59,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1599850367
+export SOURCE_DATE_EPOCH=1641427596
 export GCC_IGNORE_WERROR=1
 export CFLAGS="$CFLAGS -fno-lto "
 export FCFLAGS="$FFLAGS -fno-lto "
